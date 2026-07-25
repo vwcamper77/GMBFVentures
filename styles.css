@@ -218,6 +218,17 @@ a {
   line-height: 1.7;
 }
 
+.hero-link {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 18px;
+  color: var(--white);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 .circle-link {
   display: grid;
   width: 60px;
@@ -479,6 +490,23 @@ a {
   font-size: 20px;
 }
 
+.principles li > div {
+  display: grid;
+  gap: 8px;
+}
+
+.principles strong {
+  font-weight: 400;
+}
+
+.principles small {
+  max-width: 390px;
+  color: #61766d;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .principles li:last-child {
   border-bottom: 1px solid var(--line);
 }
@@ -510,6 +538,14 @@ a {
   font-weight: 400;
   letter-spacing: -0.065em;
   line-height: 0.88;
+}
+
+.contact-heading > p {
+  max-width: 560px;
+  margin: 38px 0 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: "Manrope", sans-serif;
+  line-height: 1.75;
 }
 
 .contact-main a {
@@ -643,7 +679,8 @@ a {
   }
 
   .hero-bottom {
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
     margin-left: 0;
   }
 
