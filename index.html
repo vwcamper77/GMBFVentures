@@ -1,232 +1,338 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="GMBF Ventures creates and operates focused digital products that make everyday decisions simpler, clearer and less stressful."
+      content="GMBF Ventures creates and operates focused digital products including ClearTill, Set The Date and TalosTV."
     />
-    <meta name="theme-color" content="#0d2d27" />
-    <meta property="og:title" content="GMBF Ventures" />
+    <meta name="theme-color" content="#0b1f33" />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href="https://gmbfventures.co.uk/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="GMBF Ventures" />
+    <meta property="og:title" content="GMBF Ventures | Practical digital products" />
     <meta
       property="og:description"
-      content="Practical digital products, built for real life."
+      content="GMBF Ventures creates and operates focused digital products including ClearTill, Set The Date and TalosTV."
     />
-    <meta property="og:type" content="website" />
-    <title>GMBF Ventures — Practical digital products</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta
+      property="og:image"
+      content="https://gmbfventures.co.uk/assets/brand/gmbf/open-graph.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="GMBF Ventures — practical digital products" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GMBF Ventures | Practical digital products" />
+    <meta
+      name="twitter:description"
+      content="Focused digital products, built for real life."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gmbfventures.co.uk/assets/brand/gmbf/open-graph.png"
+    />
+
+    <title>GMBF Ventures | Practical digital products</title>
+    <link rel="icon" href="/assets/brand/gmbf/mark-dark.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/brand/gmbf/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/brand/gmbf/icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&amp;family=Noto+Serif+Display:ital,wght@0,500;1,500&amp;display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="stylesheet" href="/styles.css" />
     <script src="/script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "GMBF Ventures Ltd",
+        "url": "https://gmbfventures.co.uk/",
+        "logo": "https://gmbfventures.co.uk/assets/brand/gmbf/icon-512.png",
+        "email": "hello@gmbfventures.co.uk",
+        "identifier": "17286832",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "124 City Road",
+          "addressLocality": "London",
+          "postalCode": "EC1V 2NX",
+          "addressCountry": "GB"
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="GMBF Ventures home">
-        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
-          <path d="M21 2 38 11.5v19L21 40 4 30.5v-19L21 2Z" />
-          <path d="m13 25 8-13 8 13M16.8 21h8.4" />
-        </svg>
-        <span>GMBF <b>Ventures</b></span>
-      </a>
+      <div class="shell header-inner">
+        <a class="brand-link" href="#top" aria-label="GMBF Ventures home">
+          <img
+            src="/assets/brand/gmbf/logo-horizontal-dark.svg"
+            width="820"
+            height="320"
+            alt="GMBF Ventures"
+          />
+        </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-        <span class="sr-only">Open navigation</span>
-      </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#ventures">Our ventures</a>
-        <a href="#how-we-build">How we build</a>
-        <a href="#company">Company</a>
-        <a class="nav-cta" href="mailto:hello@gmbfventures.co.uk">Contact us</a>
-      </nav>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#ventures">Our products</a>
+          <a href="#principles">How we build</a>
+          <a href="#company">Company</a>
+          <a class="button button-small button-outline" href="mailto:hello@gmbfventures.co.uk">
+            Contact
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="eyebrow reveal">UK product company</div>
-        <h1 class="reveal">
-          Practical digital<br />
-          <em>products.</em>
-        </h1>
-        <div class="hero-bottom reveal">
-          <p>
-            Built for real life. We make everyday decisions simpler, clearer
-            and less stressful.
-          </p>
-          <a class="hero-link" href="#ventures">
-            Explore our products
-            <span class="circle-link" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
+        <div class="hero-rule" aria-hidden="true"></div>
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light reveal">UK digital product company</p>
+            <h1 class="display reveal">Practical digital products, <em>built for real life.</em></h1>
+            <p class="hero-lead reveal">
+              GMBF Ventures creates and operates focused digital products that reduce friction,
+              improve clarity and help people make everyday decisions.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="button button-primary" href="#ventures">
+                Explore our products
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a class="text-link text-link-light" href="mailto:hello@gmbfventures.co.uk">
+                Contact GMBF Ventures
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-mark reveal" aria-hidden="true">
+            <img src="/assets/brand/gmbf/mark-light.svg" alt="" width="512" height="512" />
+            <div class="hero-mark-label">
+              <span>One parent company</span>
+              <strong>Three focused products</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ventures" id="ventures">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">Our ventures</p>
+              <h2 class="display reveal">Focused products.<br /><em>Everyday value.</em></h2>
+            </div>
+            <p class="section-intro reveal">
+              Three products designed to bring more structure and clarity to money, plans and
+              family screen time.
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <a
+              class="product-card reveal"
+              href="https://www.cleartill.money"
+              aria-label="Visit the ClearTill website"
+            >
+              <div class="product-logo-zone">
+                <img
+                  class="product-logo product-logo-wide"
+                  src="/assets/brand/products/cleartill.svg"
+                  width="1370"
+                  height="408"
+                  alt="ClearTill"
+                />
+              </div>
+              <div class="product-content">
+                <p class="product-type">Money clarity</p>
+                <h3>ClearTill</h3>
+                <p>
+                  A clearer way to understand what is genuinely left after bills before payday —
+                  without connecting a bank account.
+                </p>
+                <span class="card-link">
+                  Visit ClearTill
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+
+            <a
+              class="product-card reveal"
+              href="https://plan.setthedate.app"
+              aria-label="Visit the Set The Date planning website"
+            >
+              <div class="product-logo-zone">
+                <img
+                  class="product-logo product-logo-square"
+                  src="/assets/brand/products/set-the-date.png"
+                  width="720"
+                  height="720"
+                  alt="Set The Date"
+                />
+              </div>
+              <div class="product-content">
+                <p class="product-type">Group planning</p>
+                <h3>Set The Date</h3>
+                <p>
+                  A simpler way for groups to agree when to meet, without endless messages or
+                  requiring every participant to create an account.
+                </p>
+                <span class="card-link">
+                  Visit Set The Date
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+
+            <a
+              class="product-card reveal"
+              href="https://www.talostv.com"
+              aria-label="Visit the TalosTV website"
+            >
+              <div class="product-logo-zone">
+                <img
+                  class="product-logo product-logo-square"
+                  src="/assets/brand/products/talostv.png"
+                  width="720"
+                  height="720"
+                  alt="TalosTV"
+                />
+              </div>
+              <div class="product-content">
+                <p class="product-type">Family screen time</p>
+                <h3>TalosTV</h3>
+                <p>
+                  Structured children's screen time with finite sessions, built-in breaks and
+                  clear endings.
+                </p>
+                <span class="card-link">
+                  Visit TalosTV
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section principles" id="principles">
+        <div class="shell principles-layout">
+          <div class="principles-heading">
+            <p class="eyebrow eyebrow-light reveal">How we build</p>
+            <h2 class="display reveal">A practical standard for <em>every product.</em></h2>
+            <p class="reveal">
+              Calm, useful software shaped by recognisable needs and improved through evidence.
+            </p>
+          </div>
+
+          <div class="principle-list">
+            <article class="principle reveal">
+              <span aria-hidden="true">01</span>
+              <div>
+                <h3>Useful before impressive</h3>
+                <p>
+                  Every product must solve a recognisable problem and deliver practical value
+                  quickly.
+                </p>
+              </div>
+            </article>
+            <article class="principle reveal">
+              <span aria-hidden="true">02</span>
+              <div>
+                <h3>Clear by design</h3>
+                <p>
+                  We remove friction, complexity and unnecessary features wherever possible.
+                </p>
+              </div>
+            </article>
+            <article class="principle reveal">
+              <span aria-hidden="true">03</span>
+              <div>
+                <h3>Built through evidence</h3>
+                <p>
+                  We release carefully, learn from real use and improve products through evidence
+                  rather than hype.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section company" id="company">
+        <div class="shell company-layout">
+          <div>
+            <p class="eyebrow reveal">The company</p>
+            <h2 class="display reveal">One company.<br /><em>Several focused products.</em></h2>
+          </div>
+          <div class="company-copy reveal">
+            <p>
+              GMBF Ventures Ltd is a UK digital product company founded by Gavin Ferns. It develops
+              and operates consumer software products independently, using direct customer feedback
+              and modern AI-assisted development workflows.
+            </p>
+            <a class="button button-primary" href="mailto:hello@gmbfventures.co.uk">
+              Contact GMBF Ventures
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </span>
-          </a>
-        </div>
-        <div class="hero-index" aria-hidden="true">01</div>
-      </section>
-
-      <section class="statement section-pad" id="company">
-        <p class="section-label reveal">What we do</p>
-        <div>
-          <h2 class="reveal">
-            Real problems.<br />
-            <span>Less complexity.</span>
-          </h2>
-          <div class="statement-copy reveal">
-            <p>
-              GMBF Ventures creates and operates focused digital products that
-              make everyday decisions simpler, clearer and less stressful.
-            </p>
-            <p>
-              From understanding what is genuinely available after bills, to
-              organising time together and discovering what to watch, we build
-              around real problems rather than unnecessary complexity.
-            </p>
+            </a>
           </div>
         </div>
-      </section>
-
-      <section class="focus section-pad" id="ventures">
-        <div class="focus-intro reveal">
-          <p class="section-label light">Our ventures</p>
-          <h2>Focused products.<br />Everyday value.</h2>
-          <p>
-            Three products designed to bring clarity to money, plans and
-            entertainment.
-          </p>
-        </div>
-
-        <div class="focus-grid">
-          <article class="focus-card reveal">
-            <span>01</span>
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <path d="M7 31V17l13-8 13 8v14M14 31V20h12v11M20 20v11" />
-              </svg>
-            </div>
-            <h3>ClearTill</h3>
-            <p>
-              A clearer way to understand what is genuinely left after bills,
-              before payday.
-            </p>
-          </article>
-          <article class="focus-card reveal">
-            <span>02</span>
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <circle cx="20" cy="20" r="13" />
-                <path d="M20 7v26M7 20h26M11 12c5 4 13 4 18 0M11 28c5-4 13-4 18 0" />
-              </svg>
-            </div>
-            <h3>SetTheDate</h3>
-            <p>
-              A simpler way for groups to agree when to meet, without endless
-              messages and conflicting calendars.
-            </p>
-          </article>
-          <article class="focus-card reveal">
-            <span>03</span>
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <path d="M8 31 20 9l12 22M13 23h14M11 31h18" />
-              </svg>
-            </div>
-            <h3>TalosTV</h3>
-            <p>
-              A more considered way to discover, organise and enjoy
-              television.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="partnership section-pad" id="how-we-build">
-        <div class="partnership-visual reveal" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="core">G</div>
-        </div>
-        <div class="partnership-copy">
-          <p class="section-label reveal">How we build</p>
-          <h2 class="reveal">Useful before<br /><span>impressive.</span></h2>
-          <p class="reveal">
-            Every product must solve a recognisable problem and deliver
-            practical value quickly.
-          </p>
-          <ul class="principles reveal">
-            <li>
-              <span>01</span>
-              <div>
-                <strong>Useful before impressive</strong>
-                <small>
-                  Every product must solve a recognisable problem and deliver
-                  practical value quickly.
-                </small>
-              </div>
-            </li>
-            <li>
-              <span>02</span>
-              <div>
-                <strong>Clear by design</strong>
-                <small>
-                  We remove friction, complexity and unnecessary features
-                  wherever possible.
-                </small>
-              </div>
-            </li>
-            <li>
-              <span>03</span>
-              <div>
-                <strong>Built for the long term</strong>
-                <small>
-                  We develop products carefully, learn from real users and
-                  improve them through evidence rather than hype.
-                </small>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="contact section-pad" id="contact">
-        <p class="section-label light reveal">GMBF Ventures Ltd</p>
-        <div class="contact-main reveal">
-          <div class="contact-heading">
-            <h2>Digital products.<br />Real life.</h2>
-            <p>
-              GMBF Ventures Ltd is a UK digital product company building and
-              operating consumer software products.
-            </p>
-          </div>
-          <a href="mailto:hello@gmbfventures.co.uk">
-            Contact GMBF Ventures
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </a>
-        </div>
-        <footer>
-          <a class="brand footer-brand" href="#top">
-            <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
-              <path d="M21 2 38 11.5v19L21 40 4 30.5v-19L21 2Z" />
-              <path d="m13 25 8-13 8 13M16.8 21h8.4" />
-            </svg>
-            <span>GMBF <b>Ventures</b></span>
-          </a>
-          <p>© <span id="year"></span> GMBF Ventures. All rights reserved.</p>
-          <a href="mailto:hello@gmbfventures.co.uk">Contact</a>
-        </footer>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-top">
+        <a class="footer-brand" href="#top" aria-label="GMBF Ventures home">
+          <img
+            src="/assets/brand/gmbf/logo-horizontal-light.svg"
+            width="820"
+            height="320"
+            alt="GMBF Ventures"
+          />
+        </a>
+        <p>Practical digital products, built for real life.</p>
+        <a class="text-link text-link-light" href="mailto:hello@gmbfventures.co.uk">
+          hello@gmbfventures.co.uk
+        </a>
+      </div>
+      <div class="shell footer-bottom">
+        <p>GMBF Ventures Ltd · Company No. 17286832</p>
+        <p>Registered in England and Wales</p>
+        <p>Registered office: 124 City Road, London, EC1V 2NX, United Kingdom</p>
+        <p>© <span id="year"></span> GMBF Ventures Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
