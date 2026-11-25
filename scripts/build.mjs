@@ -1,6 +1,7 @@
 import { cp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { brandPackPath, createBrandPack } from './brand-pack.mjs';
 
 const source = new URL('../src/site/', import.meta.url);
 const output = new URL('../dist/', import.meta.url);
@@ -28,6 +29,7 @@ for (const entry of await readdir(source, { withFileTypes: true, recursive: true
 }
 await rm(output, { recursive: true, force: true });
 await cp(source, output, { recursive: true });
+await writeFile(new URL(brandPackPath, output), await createBrandPack());
 if (!formsEnabled) {
   const contactPage = new URL('contact.html', output);
   const contact = await readFile(contactPage, 'utf8');
