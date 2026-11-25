@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { extname } from 'node:path';
 import { Readable } from 'node:stream';
 import { createEnquiryHandler } from '../api/enquiry.mjs';
+import { brandPackPath, createBrandPack } from './brand-pack.mjs';
 
 const source = new URL('../src/site/', import.meta.url);
 const contentTypes = {
@@ -23,6 +24,12 @@ export function createLocalServer({ send } = {}) {
   return createServer(async (incoming, response) => {
     try {
       const address = new URL(incoming.url, 'http://127.0.0.1:' + incoming.socket.localPort);
+      if (address.pathname === '/' + brandPackPath && ['GET', 'HEAD'].includes(incoming.method)) {
+        const archive = await createBrandPack();
+        response.writeHead(200, { ...previewHeaders, 'Content-Type': 'application/zip', 'Content-Disposition': 'attachment; filename="gmbf-brand-pack.zip"' });
+        response.end(incoming.method === 'HEAD' ? undefined : archive);
+        return;
+      }
       if (address.pathname === '/api/enquiry') {
         const hasBody = !['GET', 'HEAD'].includes(incoming.method);
         const result = await handler(new Request(address, {

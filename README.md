@@ -1,10 +1,10 @@
 # GMBF Ventures website
 
-Edit the reviewed static source in `src/site/`. The dependency-free build publishes only those files to ignored `dist/`. The enquiry endpoint is maintained in `api/enquiry.mjs` and its shared logic in `lib/`. The original review pack and Python generator are private handover materials and are outside this project.
+Edit the reviewed static source in `src/site/`. The build publishes those files and generates the downloadable brand pack in ignored `dist/`. The enquiry endpoint is maintained in `api/enquiry.mjs` and its shared logic in `lib/`. The original review pack and Python generator are private handover materials and are outside this project.
 
 ## Local checks
 
-Use Node 24, then run `npm test`, `npm run build` and `npm run dev`. The dev server binds to loopback and uses mock email. It does not require or read real Resend credentials. CI runs the same test and build commands without a deployment job.
+Use Node 24, then run `npm ci`, `npm test`, `npm run build` and `npm run dev`. The dev server binds to loopback and uses mock email. It does not require or read real Resend credentials. CI runs the same test and build commands without a deployment job.
 
 ## Release checklist
 
